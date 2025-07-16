@@ -1,0 +1,279 @@
+body {
+    margin: 0
+}
+
+header {
+    width: 100vw;
+    height: 500px;
+    background-color: #6d6d6d;
+
+}
+
+/* INTRODUCCION */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    height: 100px;
+    background-color: #333;
+    color: white;
+}
+
+
+.nav-lista {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+.carousel-inner {
+    width: 100vw;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #f39c12;
+}
+
+#carrousel-img {
+    width: 100vw;
+    height: 100%;
+}
+
+.titulo-carousel {
+    font-size: 3em;
+}
+
+#carouselExampleIndicators {
+    margin: 0
+}
+
+
+
+/* CUERPO */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Tres columnas iguales */
+    height: 100vh;
+    /* Toda la altura de la pantalla */
+}
+
+.col1,
+.col3 {
+    background-color: #ffffff;
+
+}
+
+.col2 {
+    background-color: #e7e7e7;
+    width: 50vw;
+}
+
+/* COLUMNA 1 */
+.titulo-col1 {
+    text-align: center;
+}
+
+.texto-col1 {
+    text-align: justify;
+    font-size: 1vw;
+    padding: 0 4%;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    text-indent: 1em;
+    margin: 1em 0;
+}
+
+
+/* COLUMNA 2 */
+section {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 4rem;
+}
+
+.col2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.col2 .card {
+    width: 18rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagen con tamaño fijo y centrada */
+.col2 .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background-color: #f0f0f0;
+    display: block;
+    margin: 0 auto;
+}
+
+.col2 .card-body {
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.col2 .card-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.col2 .card-text {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.col2 .btn-primary {
+    width: 100%;
+}
+
+
+
+
+
+/* COLUMNA 3*/
+.tabla-col3 {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    margin: 1em;
+}
+
+.tabla-col3 th {
+    background-color: #191d23;
+    color: rgb(219, 219, 219);
+    padding: 1em;
+    font-size: 1.3em;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.tabla-col3 td {
+    padding: 1em;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    font-weight: 600;
+}
+
+.tabla-col3 tr:hover td {
+    background-color: #959798;
+}
+
+
+/* CARRITO DE COMPRAS */
+.carrito-compras {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.carrito-compras h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #111;
+}
+
+.carrito-compras .tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  justify-items: center; /* centra cada tarjeta en su celda */
+}
+
+.carrito-compras .card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 280px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carrito-compras .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
+}
+
+.carrito-compras .card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #fefefe;
+}
+
+.carrito-compras .card-body {
+  flex-grow: 1;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.carrito-compras .card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.carrito-compras .card-text {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  color: #555;
+  flex-grow: 0;
+}
+
+.carrito-compras .card-text strong {
+  color: #111;
+  font-weight: 700;
+}
+
+.carrito-compras .btn {
+  margin-top: auto;
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carrito-compras .btn:hover {
+  background-color: #0056b3;
+}

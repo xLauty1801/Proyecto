@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <ul class="nav-lista">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Redes Sociales</a>
+            </li>
+
+
+        </ul>
+    </header>
+    <main>
+        <section class="Introduccion">
+            <!-- 
+            <div class="contenido">
+                <h2 class="titulo">Cristiano Ronaldo</h2>
+                <img src="../multimedia/Cristiano Ronaldo.jpeg" alt="Cristiano Ronaldo" class="imagen">
+            </div>
+            -->
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../multimedia/Cristiano Ronaldo.jpeg" id="carrousel-img" class="d-block" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="titulo-carousel">Cristiano Ronaldo 2008</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../multimedia/Cristiano Ronaldo con champions.jpeg" id="carrousel-img" class="d-block"
+                            alt="Cristiano Ronaldo con la Champions League">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="titulo-carousel">Cristiano Ronaldo con la Champions</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../multimedia/Cristiano Ronaldo 2014 gol contra Atletico Madrid.jpg"
+                            class="d-block w-100" alt="Gol de Cristiano Ronaldo contra Atletico Madrid 2014">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="titulo-carousel">Cristiano Ronaldo 2014</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../multimedia/Cristiano Ronaldo Aura.jpg" class="d-block w-100"
+                            alt="Cristiano Ronaldo festejando">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="titulo-carousel">Cristiano Ronaldo</h1>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="cuerpo">
+            <div class="grid">
+                <div class="col1">
+                    <h2 class="titulo-col1">¿Quien es Cristiano Ronaldo?</h2>
+                    <p class="texto-col1">
+                        <!-- 
+                        <span class="Ronaldo-introduccion">
+                            Cristiano Ronaldo es un futbolista portugués que, gracias a su mentalidad ganadora y
+                            capacidad
+                            de esfuerzo, se ha convertido en uno de los mejores de la historia. El delantero, que en la
+                            actualidad milita en el Al-Nassr de Arabia Saudita, jugó durante 9 temporadas con el Real
+                            Madrid, donde vivió sus años más exitosos hasta la fecha y dejó un legado impresionante
+                            plagado
+                            de récords.
+                        </span>
+
+                        <span class="Ronaldo-lider">
+                            Además de destacar como líder en sus equipos, Ronaldo también ha sido la máxima referencia
+                            para
+                            su selección desde que debutó por primera vez en el 2001, a partir de ese momento, se
+                            convirtió
+                            en un habitual dentro de la selección portuguesa.
+                        </span>
+
+                        <span class="Ronaldo-2004">
+                            En el 2004, Cristiano disputó los Juegos Olímpicos de Atenas, donde Portugal no consiguió
+                            mostrar su mejor versión. Aun así, Ronaldo marcó un gol en la victoria ante Marruecos en el
+                            segundo partido de la fase de grupos. Fue la única victoria del combinado olímpico portugués
+                            en
+                            aquel torneo, que no pasó la fase de grupos inicial.
+                        </span>
+
+                        <span class="Ronaldo-Lisboa">
+                            Desde muy pequeño, Cristiano ya tenía la garra, la valentía y la ambición de los grandes
+                            jugadores. A los catorce años le fichó el Sporting Clube de Portugal y se marchó a Lisboa
+                            para
+                            darse a conocer y crecer como jugador.
+                        </span>
+
+                        <span class="Ronaldo-sporting-manchester">
+                            Ronaldo se ganó un puesto en el equipo juvenil de Sporting de Lisboa con 16 años, pero
+                            enseguida se le quedó pequeño y ese mismo año le ascendieron directamente al primer equipo.
+                            Su talento había llegado a oídos de Liverpool, Arsenal y Barcelona, que se interesaron por
+                            él. Sin embargo, fue el Manchester United quien terminó fichándolo después de que el
+                            técnico, Alex Ferguson, quedase impresionado por el desempeño de Ronaldo.
+                        </span>
+                        -->
+                        Cristiano Ronaldo dos Santos Aveiro es un futbolista portugués nacido el 5 de febrero de 1985 en
+                        Funchal, Madeira. Es considerado uno de los mejores jugadores de fútbol de todos los tiempos por
+                        su gran talento, disciplina, condición física y ambición. A lo largo de su carrera ha jugado en
+                        algunos de los clubes más importantes del mundo: Sporting de Lisboa (donde comenzó
+                        profesionalmente), Manchester United, Real Madrid, Juventus y actualmente en el Al-Nassr de
+                        Arabia Saudita.
+
+                        Con el Manchester United ganó varios títulos, incluyendo una Champions League. Luego, en el Real
+                        Madrid, vivió su etapa más exitosa, convirtiéndose en el máximo goleador histórico del club y
+                        ganando cuatro Champions League más. En la Juventus también se destacó como goleador y en su
+                        regreso al Manchester United siguió marcando goles. A nivel de selecciones, ha sido el gran
+                        líder de Portugal, logrando la Eurocopa 2016 y la Liga de Naciones 2019.
+
+                        Además de su éxito deportivo, es una figura mundial fuera del campo por su popularidad, su
+                        trabajo solidario y su influencia en redes sociales. Ha ganado múltiples Balones de Oro y es uno
+                        de los máximos goleadores de la historia del fútbol profesional.
+                    </p>
+                </div>
+                <div class="col2">
+                    <!-- 
+                    <div class="clubes">
+                        <div class="Sporting-Lisboa">
+                            <div class="card" >
+                                <img src="../multimedia/Sporting de Portugal.png" class="card-img-top" id="club"alt="Sporting de Portugal">
+                                <div class="card-body">
+                                    <h4 class="card-title">Sporting de Portugal</h4>
+                                    <p class="card-text">Acá fue donde empezó todo. Este fue el primer club en el que debutó y arranco su gran carrera</p>
+                                    <a href="#" class="btn btn-primary">Estadisticas en el Club</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Manchester-United">
+                            <div class="card" >
+                                <img src="../multimedia/Manchester United.png" class="card-img-top" id="club"alt="Manchester United">
+                                <div class="card-body">
+                                    <h4 class="card-title">Manchester United</h4>
+                                    <p class="card-text">En este club, Cristiano gano su primer balon de oro y champions league, teniendo actuaciones destacadas</p>
+                                    <a href="#" class="btn btn-primary">Estadisticas en el Club</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Real-Madrid">
+                            <div class="card" >
+                                <img src="../multimedia/Real_Madrid.webp" class="card-img-top" id="club"alt="Real Madrid">
+                                <div class="card-body">
+                                    <h4 class="card-title">Real Madrid</h4>
+                                    <p class="card-text">En este club, Cristiano alcanzo su pico maximo en su carrera.</p>
+                                    <a href="#" class="btn btn-primary">Estadisticas en el Club</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Juventus">
+                            <div class="card" >
+                                <img src="../multimedia/Juventus.avif" class="card-img-top" id="club"alt=Juventus">
+                                <div class="card-body">
+                                    <h4 class="card-title">Juventus</h4>
+                                    <p class="card-text">En este club, Cristiano jugo durante dos temporadas. Version infravalorada de Ronaldo</p>
+                                    <a href="#" class="btn btn-primary">Estadisticas en el Club</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Al-nassr">
+                            <div class="card" >
+                                <img src="../multimedia/Al nassr.png" class="card-img-top" id="club" alt="Al nassr">
+                                <div class="card-body">
+                                    <h4 class="card-title">Al nassr</h4>
+                                    <p class="card-text">Este es el club actual de Ronaldo.</p>
+                                    <a href="#" class="btn btn-primary">Estadisticas en el Club</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                    -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../multimedia/Sporting de Portugal.png"
+                            alt="Sporting de Portugal">
+                        <div class="card-body">
+                            <h5 class="card-title">Sporting de Portugal</h5>
+                            <p class="card-text">Cristiano Ronaldo inició su carrera profesional en el Sporting de
+                                Lisboa, club en el que dio sus primeros pasos como futbolista de élite. Con apenas 17
+                                años, deslumbró por su velocidad, técnica y madurez táctica. Su rendimiento en el equipo
+                                principal, donde alternó entre las bandas y mostró un estilo atrevido, no pasó
+                                desapercibido para los grandes de Europa. Fue en un amistoso contra el Manchester United
+                                donde terminó de llamar la atención del técnico Sir Alex Ferguson, lo que marcaría el
+                                siguiente gran paso en su carrera.
+
+                            </p>
+                            <a href="../html/subpaginas/Sporting/sporting.html" class="btn btn-primary">Ver
+                                Estadisticas</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../multimedia/Manchester United.png" alt="Manchester United">
+                        <div class="card-body">
+                            <h5 class="card-title">Manchester United</h5>
+                            <p class="card-text">Cristiano se transformó de promesa en estrella mundial. Bajo la
+                                dirección de Sir Alex Ferguson, evolucionó desde un extremo habilidoso y algo
+                                individualista a un atacante letal y completo. Ganó tres Premier League consecutivas,
+                                una Champions League en 2008 y su primer Balón de Oro ese mismo año. Tras más de 100
+                                goles con los "Red Devils", se convirtió en uno de los mejores jugadores del mundo. En
+                                2021 regresó al club con una imagen renovada y consolidada como leyenda del fútbol
+                                mundial, aportando goles y experiencia antes de su salida en 2022.
+                            </p>
+                            <a href="../html/subpaginas/Manchester united/manchester.html" class="btn btn-primary">Ver
+                                Estadisticas</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../multimedia/Real_Madrid.webp" alt="Real Madrid">
+                        <div class="card-body">
+                            <h5 class="card-title">Real Madrid</h5>
+                            <p class="card-text">El fichaje de Cristiano por el Real Madrid fue el más caro de la
+                                historia en su momento, y rápidamente justificó cada euro invertido. En el club blanco
+                                alcanzó su máximo esplendor, rompiendo récords goleadores y liderando una era dorada.
+                                Ganó cuatro Champions League, tres de ellas consecutivas, y se convirtió en el máximo
+                                goleador histórico del club con 450 goles en 438 partidos. En Madrid, consolidó su
+                                rivalidad con Lionel Messi y se convirtió en un ícono eterno del club y del fútbol
+                                mundial.
+                            </p>
+                            <a href="../html/subpaginas/Real Madrid/madrid.html" class="btn btn-primary">Ver
+                                Estadisticas</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../multimedia/Juventus.avif" alt="Juventus">
+                        <div class="card-body">
+                            <h5 class="card-title">Juventus</h5>
+                            <p class="card-text">Cristiano llegó a la Juventus con el desafío de conquistar Italia y
+                                dejar huella en otra de las grandes ligas europeas. En Turín mantuvo su impresionante
+                                nivel goleador, fue figura del equipo y ganó dos títulos de Serie A, además de una Coppa
+                                Italia y una Supercopa. Aunque no logró la Champions, dejó una marca importante como
+                                líder dentro y fuera del campo, mostrando su profesionalismo y mentalidad ganadora en
+                                todo momento.
+
+
+                            </p>
+                            <a href="../html/subpaginas/Juventus/juventus.html" class="btn btn-primary">Ver
+                                Estadisticas</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../multimedia/Al nassr.png" alt="Al nassr">
+                        <div class="card-body">
+                            <h5 class="card-title">Al nassr</h5>
+                            <p class="card-text">El traspaso de Cristiano al Al-Nassr marcó una nueva etapa en su
+                                carrera, al convertirse en la gran estrella del fútbol saudí. Su llegada elevó el nivel
+                                mediático y competitivo de la liga, atrayendo a otros jugadores y generando un impacto
+                                global. Con su presencia, el club busca consolidarse como potencia regional y ampliar su
+                                influencia internacional. Ronaldo sigue demostrando su vigencia con goles, asistencias y
+                                liderazgo, siendo una figura clave tanto en el campo como fuera de él.
+
+
+                            </p>
+                            <a href="../html/subpaginas/Al-nassr/al-nassr.html" class="btn btn-primary">Ver
+                                Estadisticas</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col3">
+                    <table class="tabla-col3">
+                        <th>Estadisticas generales de Cristiano Ronaldo</th>
+                        <tr>
+                            <td>Maximo Goleador de la Historia (+940 goles)</td>
+                        </tr>
+                        <tr>
+                            <td>Maximo Goleador a nivel selecciones (136 goles)</td>
+                        </tr>
+                        <tr>
+                            <td>Maximo Goleador de la Champions League (141 goles)</td>
+                        </tr>
+                        <tr>
+                            <td>5 balones de oro (Mejor jugador de la temporada)</td>
+                        </tr>
+                        <tr>
+                            <td>5 Champions League</td>
+                        </tr>
+                        <tr>
+                            <td>1 Eurocopa y Nations League</td>
+                        </tr>
+                        <tr>
+                            <td>4 botas de oro (Maximo goleador de la temporada)</td>
+                        </tr>
+                        <tr>
+                            <td>Unico jugador en anotar en 5 copas del mundo distintas (2006, 2010, 2014, 2018 y 2022)
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+        </section>
+        <section class="carrito-compras">
+            <h2>Productos relacionados con Cristiano Ronaldo</h2>
+            <div class="tarjetas">
+
+                <!-- PORTUGAL -->
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../multimedia/Productos/Portugal/Camiseta de Ronaldo - Portugal.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Ronaldo, Portugal</h5>
+                        <p class="card-text">Edición oficial 2024/2025, con un diseño moderno y materiales de alta calidad. Ideal para los fanáticos que quieren lucir como Cristiano Ronaldo dentro y fuera de la cancha. Perfecta para coleccionistas y amantes del fútbol.</p>
+                        <p class="card-text">Precio: <strong>85 USD</strong></p>
+                        
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>    
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../multimedia/Productos/Portugal/Camiseta Ronaldo Mundial 2006.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta mundial 2006 - Cristiano Ronaldo con Portugal</h5>
+                        <p class="card-text">Revive la pasión del Mundial 2006 con esta camiseta clásica y auténtica. Un homenaje a uno de los torneos más emblemáticos en la carrera de Cristiano Ronaldo. Perfecta para seguidores históricos y coleccionistas.</p>
+                        <p class="card-text">Precio: <strong>120 USD</strong></p>
+                        
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>    
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../multimedia/Productos/Portugal/Camiseta Ronaldo Mundial 2010.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta mundial 2010 - Cristiano Ronaldo con Portugal</h5>
+                        <p class="card-text">Diseño oficial del Mundial 2010 que refleja el estilo único de Cristiano Ronaldo. Ligera y cómoda, esta camiseta es ideal para quienes valoran la historia del fútbol moderno y buscan calidad en cada detalle.</p>
+                        <p class="card-text">Precio: <strong>90 USD</strong></p>
+                        
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>    
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../multimedia/Productos/Portugal/Camiseta Ronaldo Mundial 2014.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta mundial 2014 - Cristiano Ronaldo con Portugal</h5>
+                        <p class="card-text">Clásica camiseta del Mundial 2014 con detalles exclusivos y un diseño que representa la garra de Portugal en la competencia. Perfecta para usar en el día a día o en la cancha, con calidad y estilo garantizados.</p>
+                        <p class="card-text">Precio: <strong>60 USD</strong></p>
+                        
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>    
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../multimedia/Productos/Portugal/Camiseta de Ronaldo Mundial 2018.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta mundial 2018 - Cristiano Ronaldo con Portugal</h5>
+                        <p class="card-text">Última edición oficial del Mundial 2018, fiel al estilo y la tecnología deportiva avanzada de CR7. Un artículo imprescindible para los verdaderos fanáticos y coleccionistas del fútbol.</p>
+                        <p class="card-text">Precio: <strong>100 USD</strong></p>
+                        
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>    
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../multimedia/Productos/Portugal/Camiseta Ronaldo Mundial 2022.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta mundial 2022 - Cristiano Ronaldo con Portugal</h5>
+                        <p class="card-text">Camiseta oficial del Mundial 2022, que Cristiano Ronaldo llevó con orgullo defendiendo a Portugal. Diseñada con tecnología avanzada para brindar comodidad y estilo dentro y fuera de la cancha. Ideal para coleccionistas y fans del fútbol actual.</p>
+                        <p class="card-text">Precio: <strong>95 USD</strong></p>
+                        
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>    
+                </div>
+
+
+
+
+                <!-- REAL MADRID -->
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../multimedia/Productos/Real Madrid/Camiseta Ronaldo 2014 Real Madrid.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Champions 2014 - Cristiano Ronaldo con Real Madrid</h5>
+                        <p class="card-text">Esta camiseta representa la histórica temporada 2014 en la que Cristiano Ronaldo brilló con Real Madrid, conquistando la Champions League. Un artículo imprescindible para seguidores del club y amantes del fútbol europeo.</p>
+                        <p class="card-text">Precio: <strong>100 USD</strong></p>
+                        
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>    
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../multimedia/Productos/Real Madrid/Camiseta Ronaldo 2016 Real Madrid.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Champions 2016 - Cristiano Ronaldo con Real Madrid</h5>
+                        <p class="card-text">Rememora la épica victoria en la Champions 2016 con esta camiseta oficial usada por Cristiano Ronaldo. Con un diseño clásico y materiales de alta calidad, es perfecta para fans que valoran la grandeza del Real Madrid.</p>
+                        <p class="card-text">Precio: <strong>95 USD</strong></p>
+                        
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>    
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../multimedia/Productos/Real Madrid/Camiseta Ronaldo 2017 Real Madrid.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Champions 2017 - Cristiano Ronaldo con Real Madrid</h5>
+                        <p class="card-text">La camiseta de la Champions 2017 que marcó un hito en la carrera de Cristiano Ronaldo con Real Madrid. Este modelo exclusivo destaca por su elegancia y detalle, ideal para coleccionistas y apasionados del fútbol.</p>
+                        <p class="card-text">Precio: <strong>140 USD</strong></p>
+                        
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>    
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../multimedia/Productos/Real Madrid/Camiseta Ronaldo 2018 Real Madrid.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Champions 2018 - Cristiano Ronaldo con Real Madrid</h5>
+                        <p class="card-text">Edición oficial de la Champions League 2018, usada por Cristiano Ronaldo durante una temporada memorable. Combina estilo y tecnología para ofrecer confort y autenticidad a los verdaderos fanáticos.</p>
+                        <p class="card-text">Precio: <strong>110 USD</strong></p>
+                        
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>    
+                </div>
+
+                <!-- Manchester United -->
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../multimedia/Productos/Manchester United/Camiseta Ronaldo 2008.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Champions 2008 - Cristiano Ronaldo con Manchester United</h5>
+                        <p class="card-text">Esta camiseta oficial de la Champions League 2008 fue usada por Cristiano Ronaldo durante su etapa clave en Manchester United. Representa una temporada histórica llena de pasión y éxito, ideal para coleccionistas y fanáticos que valoran los momentos icónicos del fútbol.</p>
+                        <p class="card-text">Precio: <strong>110 USD</strong></p>
+                        
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
