@@ -6,7 +6,7 @@ body {
 header {
     width: 100vw;
     height: 500px;
-    background-color: #6d6d6d;
+
     margin-bottom: 1em;
 }
 .header {
@@ -15,7 +15,7 @@ header {
     justify-content: center;
     font-size: 25px;
     height: 100px;
-    background-color: #333;
+    background-color: #111;
     color: white;
 }
 .nav-lista {
@@ -86,4 +86,72 @@ header {
 .tabla-col3 tr:hover td {
     background-color: #959798;
 }
+
+/* FOOTER */
+
+  .footer {
+    margin-top:1em;
+    background-color: #111;
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .footer-section h3, .footer-section h4 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f7c600;
+    padding-bottom: 5px;
+  }
+
+  .footer-section p, .footer-section ul, .footer-section a {
+    font-size: 14px;
+    color: #ddd;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+  }
+
+  .footer-section ul li a:hover {
+    color: #f7c600;
+  }
+
+  .social-icons a img {
+    width: 24px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    color: #888;
+  }
 
