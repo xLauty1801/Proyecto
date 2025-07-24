@@ -13,7 +13,7 @@ function actualizarCarrito() {
       total += item.precio * item.cantidad;
     });
 
-    totalSpan.textContent = total.toFixed(2);
+    totalSpan.textContent = total.toFixed(2); // convierto a dos decimales el precio final 
 }
 
 function agregarAlCarrito(nombre, precio) {
